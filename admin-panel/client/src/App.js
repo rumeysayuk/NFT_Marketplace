@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { ToastContainer } from "react-toastify";
 import { Navbar, Footer, Sidebar, ThemeSettings, Auth } from "./components";
-import { Ecommerce, Employees, ProfileDetail, Users } from "./pages";
+import { Ecommerce, ProfileDetail, Users } from "./pages";
 import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
 import { useSelector } from "react-redux";
@@ -74,11 +74,11 @@ const App = () => {
                 {/*<ProtectedRoute component={<Ecommerce />} path="/" />*/}
                 <Route path="/profile-detail" element={<ProfileDetail />} />
 
-                <Route path="/" element={<Employees />} />
+                <Route path="/" element={<Users />} />
                 <Route path="/homepage" element={<Ecommerce />} />
 
                 {/* pages  */}
-                <Route path="/users" element={<Employees />} />
+                <Route path="/users" element={<Users />} />
               </Routes>
             </div>
             <Footer />

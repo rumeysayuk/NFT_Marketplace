@@ -1,62 +1,64 @@
-import React from "react";
-import {
-  GridComponent,
-  ColumnsDirective,
-  ColumnDirective,
-  Inject,
-} from "@syncfusion/ej2-react-grids";
-import { Page, Search, Toolbar, Edit } from "@syncfusion/ej2-react-grids";
+import React, {useState} from 'react';
+import {Button, Form, Input, Select, notification} from 'antd';
+import {updateUser} from "../../services/userService";
 
-const UserEditForm = ({ isOpen, employeeData, onSave, onCancel }) => {
-  const handleSave = (args) => {
-    onSave(args);
-  };
+const UserEditForm = ({record}) => {
+   const [selectedStatus, setSelectedStatus] = useState(record.isBlocked ? 'Blocked' : 'Unblocked');
 
-  const handleCancel = () => {
-    onCancel();
-  };
+   const onFinish = async (values) => {
+      try {
+         const updatedUserData = {
+            walletNumber: values.walletNumber,
+            isBlocked: values.isBlocked,
+         };
+         await updateUser(record._id, updatedUserData);
+         notification.success({
+            message: 'Success',
+            description: 'This operation was successful',
+         }, {duration: "3seconds"});
+      } catch (error) {
+         console.error('Error updating user:', error);
+      }
+   };
 
-  return (
-    <div className={`edit-form ${isOpen ? "open" : ""}`}>
-      <h2>Edit Employee</h2>
-      <GridComponent
-        dataSource={[employeeData]}
-        allowPaging
-        allowSorting
-        editSettings={{
-          allowEditing: true,
-          allowAdding: true,
-          allowDeleting: true,
-        }}
-        toolbar={["Update", "Cancel"]}
-        actionBegin={handleSave}
-        actionComplete={handleCancel}
+   const onFinishFailed = (errorInfo) => {
+      notification.error({
+         message: 'Error',
+         description: "This operation wasn't successful",
+      }, {duration: "3seconds"});
+      console.log('Failed:', errorInfo);
+   };
+
+   const handleStatusChange = (value) => {
+      setSelectedStatus(value);
+   };
+   return (
+      <Form
+         name="basic"
+         labelCol={{span: 6}}
+         wrapperCol={{span: 24}}
+         style={{maxWidth: 800, float: 'center'}}
+         initialValues={{remember: true, walletNumber: record.walletNumber, isBlocked: selectedStatus === 'Blocked'}}
+         onFinish={onFinish}
+         onFinishFailed={onFinishFailed}
+         autoComplete="off"
       >
-        <ColumnsDirective>
-          <ColumnDirective
-            field="id"
-            headerText="ID"
-            isPrimaryKey={true}
-            textAlign="Right"
-            width="90"
-          />
-          <ColumnDirective field="name" headerText="Name" width="120" />
-          <ColumnDirective
-            field="designation"
-            headerText="Designation"
-            width="150"
-          />
-          <ColumnDirective
-            field="salary"
-            headerText="Salary"
-            textAlign="Right"
-            width="100"
-          />
-        </ColumnsDirective>
-        <Inject services={[Page, Search, Toolbar, Edit]} />
-      </GridComponent>
-    </div>
-  );
+         <Form.Item label="Wallet Number" name="walletNumber">
+            <Input disabled/>
+         </Form.Item>
+         <Form.Item label="Block Status" name="isBlocked">
+            <Select defaultValue={record.isBlocked ? "Blocked" : "Unblocked"} onChange={handleStatusChange}>
+               <Select.Option value={true}>Blocked</Select.Option>
+               <Select.Option value={false}>Unblocked</Select.Option>
+            </Select>
+         </Form.Item>
+         <Form.Item wrapperCol={{offset: 12, span: 16}}>
+            <Button type="primary" htmlType="submit">
+               Save
+            </Button>
+         </Form.Item>
+      </Form>
+   );
 };
 
 export default UserEditForm;

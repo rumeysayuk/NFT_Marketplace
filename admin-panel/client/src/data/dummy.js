@@ -79,10 +79,10 @@ const gridEmployeeProfile = (props) => (
   <div className="flex items-center gap-2">
     <img
       className="rounded-full w-10 h-10"
-      src={props.EmployeeImage}
+      src={"https://img.freepik.com/free-psd/3d-nft-icon-metaverse-illustration_629802-14.jpg?w=2000"}
       alt="employee"
     />
-    <p>{props.Name}</p>
+    <p>{props.Name} frgtbhftgh</p>
   </div>
 );
 
@@ -469,12 +469,6 @@ export const customersGrid = [
 ];
 
 export const employeesGrid = [
-  {
-    headerText: "Username",
-    width: "150",
-    template: gridEmployeeProfile,
-    textAlign: "Center",
-  },
   {
     field: "Name",
     headerText: "",

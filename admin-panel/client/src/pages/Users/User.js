@@ -1,73 +1,93 @@
-import React, { useState } from "react";
-import { Header } from "../../components";
-import {
-  GridComponent,
-  ColumnsDirective,
-  ColumnDirective,
-  Page,
-  Search,
-  Inject,
-  Toolbar,
-} from "@syncfusion/ej2-react-grids";
-import { employeesData, employeesGrid } from "../../data/dummy";
-import UserEditFormModal from "./UserEditFormModal";
-import UserEditForm from "./UserEditForm";
+import React, {useState, useEffect} from "react";
+import {Header, Loading} from "../../components";
+import {Table, Modal, Menu, Dropdown } from "antd";
+import {CheckOutlined, CloseOutlined, EditOutlined, SettingOutlined} from '@ant-design/icons';
+import moment from 'moment';
+import UserEditForm from './UserEditForm';
+import {getUsers} from "../../services/userService";
 
 const Users = () => {
-  const toolbarOptions = ["Search"];
-  const editing = { allowDeleting: true, allowEditing: true };
+   const [data, setData] = useState(null);
+   const [editRecord, setEditRecord] = useState(null);
+   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedEmployeeData, setSelectedEmployeeData] = useState(null);
+   const handleEdit = (record) => {
+      setEditRecord(record);
+      setIsModalVisible(true);
+   };
 
-  const handleEdit = (employeeData) => {
-    setSelectedEmployeeData(employeeData);
-    setIsModalOpen(true);
-  };
+   const handleCancel = () => {
+      setIsModalVisible(false);
+   };
 
-  const handleSave = (args) => {
-    // Düzenleme işlemini kaydetmek için yapılacak işlemler
-    setIsModalOpen(false);
-  };
+   const renderActionMenu = (record) => (
+      <Menu>
+         <Menu.Item key="edit" icon={<EditOutlined />} onClick={() => handleEdit(record)}>
+            Edit
+         </Menu.Item>
+      </Menu>
+   );
 
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
 
-  return (
-    <div>
-      <Header title={"Users"} />
-      <GridComponent
-        dataSource={employeesData}
-        allowPaging
-        allowSorting
-        width={"auto"}
-        pageSettings={{ pageCount: 5 }}
-        editSettings={editing}
-        toolbar={toolbarOptions}
-      >
-        <ColumnsDirective>
-          {employeesGrid.map((item, i) => (
-            <ColumnDirective {...item} />
-          ))}
-          <ColumnDirective
-            headerText="Edit"
-            template={() => <button onClick={() => handleEdit()}>Edit</button>}
-            allowFiltering={false}
-            allowSorting={false}
-          />
-        </ColumnsDirective>
-        <Inject services={[Page, Search, Toolbar]} />
-      </GridComponent>
-      <UserEditFormModal isOpen={isModalOpen} onClose={handleCancel}>
-        <UserEditForm
-          employeeData={selectedEmployeeData}
-          onSave={handleSave}
-          onCancel={handleCancel}
-        />
-      </UserEditFormModal>
-    </div>
-  );
+   const columns = [
+      {
+         title: 'Action',
+         dataIndex: 'operation',
+         render: (_, record) => (
+            <Dropdown overlay={renderActionMenu(record)} trigger={['click']}>
+               <a className="ant-dropdown-link" onClick={(e) => e.preventDefault()}>
+                  <SettingOutlined />
+               </a>
+            </Dropdown>
+         ),
+      },
+      {
+         title: 'Wallet Number',
+         dataIndex: 'walletNumber',
+         key: 'walletNumber',
+         sorter: (a, b) => a - b
+      },
+      {
+         title: 'Registration Date',
+         dataIndex: 'createdAt',
+         key: 'createdAt',
+         sorter: (a, b) => a - b,
+         render: (createdAt) => moment(createdAt).format('DD/MM/YYYY HH:mm'),
+      },
+      {
+         title: 'Blocked Status',
+         dataIndex: 'isBlocked',
+         key: 'isBlocked',
+         sorter: (a, b) => a - b,
+         render: (isBlocked) =>
+            isBlocked === true ? <CheckOutlined style={{color: 'green'}}/> : <CloseOutlined style={{color: 'red'}}/>,
+      },
+   ];
+
+   useEffect(() => {
+      getUsers().then(res => {
+         setData(res.data)
+      });
+   }, [data]);
+
+   if (!data) return <Loading/>;
+
+   return (
+      <div className="md:m-3 md:p-2 bg-white rounded-3xl">
+         <Header title="Users"/>
+         <Table dataSource={data || []} columns={columns} rowKey={(record) => record._id} />
+         <Modal
+            title="Edit User"
+            open={isModalVisible}
+            onCancel={handleCancel}
+            footer={null}
+         >
+            {editRecord && (
+               <UserEditForm record={editRecord}/>
+            )}
+         </Modal>
+      </div>
+   );
 };
 
 export default Users;

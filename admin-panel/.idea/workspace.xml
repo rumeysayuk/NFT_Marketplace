@@ -1,57 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Loading.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/helpers/sorterHelper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/userService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/UserForMetamaskWallet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/AuthButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AuthButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/LineChart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/Pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/SparkLine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/Stacked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/data/dummy.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/dummy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Employees.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Users/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Users/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Users/UserEditForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Users/UserEditForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Users/UserEditFormModal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Area.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/ColorMapping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Financial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Line.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Pyramid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Stacked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/Chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/Chatroom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/ChatroomCreate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ColorPicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Ecommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Ecommerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Kanban.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Orders.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Category.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Chatroom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Kanban.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Message.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Messages.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Product.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Pyramid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/authRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/authRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/chatroomRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/postRoutes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/assets/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/CountBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/CountBox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/CustomButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/CustomButton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/DisplayCampaigns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/DisplayCampaigns.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FormField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FormField.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FundCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FundCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Loader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Loader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/Sidebar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/context/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/context/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CampaignDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CampaignDetails.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CreateCampaign.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CreateCampaign.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Profile.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +56,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2ROXJVZSLhNvawJox0sR4zKLNg3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

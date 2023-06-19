@@ -3,7 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import avatar from "../data/avatar.jpg";
-import { Cart, Chat, Notification, UserProfile } from "./index";
+import { Notification, UserProfile } from "./index";
 import { useStateContext } from "../contexts/ContextProvider";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -105,8 +105,6 @@ const Navbar = () => {
           </button>
         )}
 
-        {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
         {isClicked.notification && <Notification />}
         {isClicked.userProfile && <UserProfile />}
       </div>

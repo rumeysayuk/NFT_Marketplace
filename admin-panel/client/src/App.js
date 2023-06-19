@@ -4,7 +4,7 @@ import { FiSettings } from "react-icons/fi";
 import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { ToastContainer } from "react-toastify";
 import { Navbar, Footer, Sidebar, ThemeSettings, Auth } from "./components";
-import { Ecommerce, ProfileDetail, Users } from "./pages";
+import {Ecommerce, ProfileDetail, Users } from "./pages";
 import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
 import { useSelector } from "react-redux";

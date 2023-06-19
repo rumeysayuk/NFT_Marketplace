@@ -16,6 +16,7 @@ import pencil from "./pencil.svg"
 import add from "./add.png"
 import heart from "./heart.png"
 import redheart from "./redheart.png"
+import  webLogo from "./WebLogo.png"
 
 export {
    tagType,
@@ -35,5 +36,6 @@ export {
    pencil,
    add,
    heart,
-   redheart
+   redheart,
+   webLogo
 };

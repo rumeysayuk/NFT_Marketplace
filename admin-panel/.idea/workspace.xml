@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="...">
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserProfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/constants/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/data/dummy.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/dummy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/ProfileDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProfileDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/userService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/image_5f6w2c51q.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/image_czakmdsep.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/public/images/image_p1xclzmml.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
-    </list>
+    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="..." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

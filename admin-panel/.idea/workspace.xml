@@ -3,33 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="...">
       <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/AuthButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/AuthButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Cart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/LineChart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/Pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/SparkLine.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Charts/Stacked.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Auth/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Sidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UserProfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UserProfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/constants/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/data/dummy.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/data/dummy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Calendar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Area.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Bar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/ColorMapping.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Financial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Line.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Pie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Pyramid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Charts/Stacked.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/Chat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/Chatroom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Chat/ChatroomCreate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/ColorPicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Ecommerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Ecommerce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Editor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Kanban.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Orders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/ProfileDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/ProfileDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/services/userService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/images/image_5f6w2c51q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/images/image_czakmdsep.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/public/images/image_p1xclzmml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/userRoutes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +58,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.14.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.18.36" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />

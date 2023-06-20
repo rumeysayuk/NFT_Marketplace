@@ -2,7 +2,10 @@ import axios from "axios"
 import {toast} from "react-toastify"
 
 const apiAxios = axios.create({
-    baseURL: process.env.REACT_APP_BASE_API_URI
+    baseURL: process.env.REACT_APP_BASE_API_URI,
+    headers: {
+        "Content-Type": "application/json",
+    },
 })
 
 apiAxios.interceptors.request.use((req) => {

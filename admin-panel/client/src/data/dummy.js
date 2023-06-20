@@ -237,10 +237,12 @@ export const links = [
     links: [
       {
         name: "Users",
+        to:"users",
         icon: <AiOutlineUser />,
       },
       {
         name: "Profile",
+        to:"profile-detail",
         icon: <AiFillProfile />,
       },
     ],

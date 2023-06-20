@@ -19,3 +19,13 @@ export const updateUser = async (userId, updatedUserData) => {
       throw new Error(error.response.data.error);
    }
 }
+
+export const updateAdminInfo = async (userId, updatedUserData) => {
+   updatedUserData.profile_img = updatedUserData.profile_img.join('');
+   try {
+      const response = await axios.put(API_URI + `/users/admin/${userId}`, updatedUserData);
+      return response.data;
+   } catch (error) {
+      throw new Error(error.response.data.error);
+   }
+}

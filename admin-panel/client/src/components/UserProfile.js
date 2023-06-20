@@ -2,11 +2,9 @@ import React from "react";
 import { MdOutlineCancel } from "react-icons/md";
 import { AuthButton } from "./index";
 import { useStateContext } from "../contexts/ContextProvider";
-import avatar from "../data/avatar.jpg";
 import { useSelector } from "react-redux";
 import { BsCurrencyDollar, BsShield } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import { FiCreditCard } from "react-icons/fi";
 
 const UserProfile = () => {
   const { currentColor, setIsClicked, initialState } = useStateContext();
@@ -20,22 +18,6 @@ const UserProfile = () => {
       desc: " Account Settings",
       icon: <BsCurrencyDollar />,
       path: "/profile-detail",
-    },
-    {
-      color: "rgb(0, 194, 146)",
-      bgColor: "rgb(235, 250, 242)",
-      title: "My Inbox",
-      desc: "Messages & Emails",
-      icon: <BsShield />,
-      path: "/my-inbox",
-    },
-    {
-      color: "rgb(255, 244, 229)",
-      bgColor: "rgb(254, 201, 15)",
-      title: "My Tasks",
-      desc: " To-do and Daily Tasks ",
-      icon: <FiCreditCard />,
-      path: "/kanban",
     },
   ];
 
@@ -55,7 +37,7 @@ const UserProfile = () => {
       <div className="flex gap-5 items-center mt-6 border-color border-b-1 pb-6">
         <img
           className="rounded-full h-24 w-24"
-          src={avatar}
+          src={authData?.profile_img}
           alt="user-profile"
         />
         <div>

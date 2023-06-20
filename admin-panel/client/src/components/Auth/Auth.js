@@ -43,7 +43,7 @@ const Auth = () => {
 
    const handleShowPassword = () => setShowPassword((prevShowPass) => !prevShowPass)
    return (
-      <Container component={"main"} maxWidth={"xs"}>
+      <Container component={"main"} maxWidth={"sm"}>
          <Paper className={classes.paper} elevation={3}>
             <Avatar className={classes.avatar}>
                <LockOutlined/>
@@ -67,7 +67,7 @@ const Auth = () => {
                </Button>
                <Grid container justifyContent={"flex-end"} >
                   <Grid item>
-                     <Button onClick={switchMode}>
+                     <Button onClick={switchMode} style={{float:"right"}}>
                         {isSignup ? "Already have an account ? Sign in" : "Don't have an account? Sign up"}
                      </Button>
                   </Grid>

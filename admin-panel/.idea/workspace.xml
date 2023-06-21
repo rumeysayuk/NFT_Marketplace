@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="..." />
+    <list default="true" id="4db997b0-127e-488a-9063-edd5af4f8e08" name="Changes" comment="...">
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/assets/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/assets/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/DisplayCampaigns.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/DisplayCampaigns.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FundCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/components/FundCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CampaignDetails.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CampaignDetails.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CreateCampaign.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/CreateCampaign.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../project_crowdfunding-master/client/src/pages/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +76,9 @@
       <workItem from="1687128392325" duration="318000" />
       <workItem from="1687129428088" duration="7008000" />
       <workItem from="1687172734844" duration="19838000" />
+      <workItem from="1687301121476" duration="1953000" />
+      <workItem from="1687334735312" duration="2331000" />
+      <workItem from="1687341562374" duration="633000" />
     </task>
     <servers />
   </component>

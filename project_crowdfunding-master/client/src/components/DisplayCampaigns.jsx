@@ -2,21 +2,22 @@ import React from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 
 import FundCard from "./FundCard";
-import { loader } from "../assets";
+import { archive, loader } from "../assets";
 import moment from "moment";
 
-const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
+const DisplayCampaigns = ({ title, isLoading, campaigns, archivedData }) => {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
 
   const handleNavigate = (campaign) => {
     navigate(`/campaign-details/${campaign.title}`, { state: campaign });
   };
-
+  const currentDate = new Date().getTime();
+  const count = campaigns.filter((obj) => obj.deadline > currentDate).length;
   return (
     <div>
       <h1 className="font-epilogue font-semibold text-[18px] text-white text-left">
-        {title} ({campaigns.length - 1})
+        {title} ({count})
       </h1>
 
       <div className="flex flex-wrap mt-[20px] gap-[26px]">
@@ -48,12 +49,12 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
                   .includes(searchParams.get("search") || "")
               );
             })
-            .map((campaign, i) => (
+            .map((campaign) => (
               <FundCard
-                // key={campaign.id}
+                key={campaign.pId}
                 {...campaign}
-                key={i}
                 handleClick={() => handleNavigate(campaign)}
+                archivedData={archivedData}
               />
             ))}
       </div>

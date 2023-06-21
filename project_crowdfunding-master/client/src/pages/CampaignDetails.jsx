@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { ethers } from "ethers";
-
 import { useStateContext } from "../context";
 import { CountBox, CustomButton, Loader } from "../components";
 import { calculateBarPercentage, daysLeft } from "../utils";
-import { thirdweb } from "../assets";
+import { profile } from "../assets";
 
 const CampaignDetails = () => {
   const { state } = useLocation();
@@ -20,7 +18,7 @@ const CampaignDetails = () => {
 
   const fetchDonators = async () => {
     const data = await getDonations(state.pId);
-
+    console.log(data);
     setDonators(data);
   };
 
@@ -82,7 +80,7 @@ const CampaignDetails = () => {
             <div className="mt-[20px] flex flex-row items-center flex-wrap gap-[14px]">
               <div className="w-[52px] h-[52px] flex items-center justify-center rounded-full bg-[#2c2f32] cursor-pointer">
                 <img
-                  src={thirdweb}
+                  src={profile}
                   alt="user"
                   className="w-[60%] h-[60%] object-contain"
                 />
@@ -92,7 +90,7 @@ const CampaignDetails = () => {
                   {state.owner}
                 </h4>
                 <p className="mt-[4px] font-epilogue font-normal text-[12px] text-[#808191]">
-                  10 Collections
+                  3 Collections
                 </p>
               </div>
             </div>
@@ -112,7 +110,7 @@ const CampaignDetails = () => {
 
           <div>
             <h4 className="font-epilogue font-semibold text-[18px] text-white uppercase">
-              The person who bought the NFT
+              Donators
             </h4>
 
             <div className="mt-[20px] flex flex-col gap-4">

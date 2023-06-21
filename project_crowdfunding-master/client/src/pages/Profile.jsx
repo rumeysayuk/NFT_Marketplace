@@ -20,11 +20,17 @@ const Profile = () => {
   }, [address, contract]);
 
   return (
-    <DisplayCampaigns
-      title="All Collections"
-      isLoading={isLoading}
-      campaigns={campaigns}
-    />
+    <>
+      <div className="address-container">
+        <p className="wallet-address">This is your wallet addres : </p>
+        <p className="neon-frame">{address}</p>
+      </div>
+      <DisplayCampaigns
+        title="My Collections"
+        isLoading={isLoading}
+        campaigns={campaigns}
+      />
+    </>
   );
 };
 
